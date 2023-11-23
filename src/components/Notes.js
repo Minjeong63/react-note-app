@@ -21,8 +21,6 @@ const Notes = () => {
   const [sortedNotes, setSortedNotes] = useState([]);
   const [sortModalOpen, setSortModalOpen] = useState(false);
 
-  console.log('pinSort : ', pinSort);
-
   const sortByPriority = (a, b) => {
     // priority가 'HIGH'인 경우를 먼저 정렬
     if (a.priority === 'HIGH' && b.priority !== 'HIGH') {
@@ -36,7 +34,6 @@ const Notes = () => {
     return 0;
   };
 
-  console.log(sortedNotes);
   const onChangeTitle = (e) => {
     setTitle(e.target.value);
   };
@@ -44,7 +41,6 @@ const Notes = () => {
   useEffect(() => {
     // notes를 복제한 후, sortByPriority 함수를 사용하여 정렬한 값을 setSortedNotes로 업데이트
     setSortedNotes([...notes].sort(sortByPriority));
-    console.log('!!!!! : ', sortedNotes);
   }, [pinSort, notes]);
 
   return (

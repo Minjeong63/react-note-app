@@ -1,0 +1,69 @@
+.select-tag-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경에 어둡게 흐리게 만들기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-tag-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.select-tag-modal-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.select-tag-modal-first-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.select-tag-modal-close-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  color: rgb(137, 137, 137);
+}
+
+.select-tag-modal-input {
+  width: calc(100% - 16px);
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+}
+
+.select-tag-modal-tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.select-tag-modal-tag {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.select-tag-modal-plus-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  color: rgb(137, 137, 137);
+}

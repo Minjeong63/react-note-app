@@ -1,0 +1,107 @@
+.note-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경에 어둡게 흐리게 만들기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.note-modal-first-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.note-modal-close-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.note-modal-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.note-modal-title {
+  width: calc(100% - 24px);
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 1px solid rgb(235, 234, 234);
+  margin-bottom: 12px;
+}
+
+.note-modal-content {
+  width: calc(100% - 24px);
+  border: 1px solid rgb(235, 234, 234);
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  height: 100px;
+}
+
+.last-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.note-modal-tag-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.note-modal-tag {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  background-color: rgb(235, 234, 234);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.note-modal-close-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.note-modal-plus-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.node-modal-plus-button {
+  width: 96px;
+  height: 48px;
+  background-color: rgb(252, 236, 176);
+  border: 1px solid rgb(235, 234, 234);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: 700;
+}

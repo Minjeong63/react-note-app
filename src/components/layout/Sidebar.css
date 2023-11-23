@@ -1,0 +1,45 @@
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: rgb(252, 236, 176);
+}
+
+.sidebar-title {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: rgba(239, 221, 152, 0.85);
+}
+
+.sidebar-icon-container {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
